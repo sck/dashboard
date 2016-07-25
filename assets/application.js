@@ -15074,7 +15074,8 @@ var data = [{data: {"comments":[{"name":"Healthy Pins","body":"TIL getting wider
   });
 
   setInterval(function() {
-    source.callbacks.message(JSON.stringify(data[Math.floor((Math.random() * 10) + 1)]))
+    var d = data[Math.floor((Math.random() * 10) + 1)]
+    source.callbacks.message({data: JSON.stringify(d.data)})
   }, 500)
 
 
