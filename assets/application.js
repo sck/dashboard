@@ -15033,6 +15033,8 @@ var data = [{data: {"comments":[{"name":"Healthy Pins","body":"TIL getting wider
 
   source = {
     data: data,
+    addEventListener: function() {
+    },
   }
 
   source.addEventListener('open', function(e) {
