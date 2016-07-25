@@ -15033,7 +15033,9 @@ var data = [{data: {"comments":[{"name":"Healthy Pins","body":"TIL getting wider
 
   source = {
     data: data,
-    addEventListener: function() {
+    callbacks: {},
+    addEventListener: function(kind, cb) {
+      source.callbacks[kind] = cb;
     },
   }
 
@@ -15070,6 +15072,11 @@ var data = [{data: {"comments":[{"name":"Healthy Pins","body":"TIL getting wider
       }
     }
   });
+
+  setInterval(function() {
+    source.callbacks.message(JSON.stringify(data[Math.floor((Math.random() * 10) + 1)]))
+  }, 500)
+
 
   source.addEventListener('dashboards', function(e) {
     var data;
