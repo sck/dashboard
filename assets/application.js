@@ -11506,11 +11506,13 @@ var prepareString = "a"[0] != "a",
         _results = [];
         for (i = _i = 0, _len = segments.length; _i < _len; i = ++_i) {
           seg = segments[i];
-          _results.push(("" + seg).replace(/^(?!\/)/, '').replace(/\/+$/, ''));
+          _results.push(("" + seg).replace(/^(?!\/)/, '/').replace(/\/+$/, ''));
         }
         return _results;
       })();
-      return segments.join('') || '/';
+      var r =  segments.join('') || '/';
+      console.log(r)
+      return r
     };
 
     Navigator.normalizePath = Navigator.prototype.normalizePath;
