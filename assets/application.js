@@ -15025,6 +15025,8 @@ var data = [{data: {"comments":[{"name":"Healthy Pins","body":"TIL getting wider
 {data: {"current":153010,"last":5288,"id":"karma","updatedAt":1469455430}},
 {data: {"value":24,"id":"synergy","updatedAt":1469455430}}]
 
+debugger
+
 
   Dashing.widgets = widgets = {};
 
