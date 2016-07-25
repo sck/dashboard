@@ -15003,7 +15003,7 @@ var prepareString = "a"[0] != "a",
 
   Dashing.debugMode = false;
 
-  source = new EventSource('events');
+  source = new EventSource('e.json');
 
   source.addEventListener('open', function(e) {
     return console.log("Connection opened", e);
