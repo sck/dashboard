@@ -11499,6 +11499,7 @@ var prepareString = "a"[0] != "a",
     Navigator.prototype.redirect = Navigator.prototype.push;
 
     Navigator.prototype.normalizePath = function() {
+      console.log("aslkdjfklasd")
       var i, seg, segments;
       segments = 1 <= arguments.length ? __slice.call(arguments, 0) : [];
       segments = (function() {
