@@ -11511,6 +11511,7 @@ var prepareString = "a"[0] != "a",
         return _results;
       })();
       var r =  segments.join('') || '/';
+      console.log("r: " + r)
       return r.replace(/^\//, "")
     };
 
